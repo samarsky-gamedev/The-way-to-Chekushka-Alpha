@@ -10,8 +10,8 @@
 | Windows | Windows 10/11, x86-64 | [Скачать ZIP](https://github.com/samarsky-gamedev/The-way-to-Chekushka-Alpha/releases/download/v0.1.0-alpha.1/The-way-to-Chekushka-v0.1.0-alpha.1-Windows-x86_64.zip) |
 | macOS | macOS 11+ на Intel или macOS 13+ на Apple Silicon | [Скачать ZIP](https://github.com/samarsky-gamedev/The-way-to-Chekushka-Alpha/releases/download/v0.1.0-alpha.1/The-way-to-Chekushka-v0.1.0-alpha.1-macOS-universal.zip) |
 
-[Открыть страницу релиза](https://github.com/samarsky-gamedev/The-way-to-Chekushka-Alpha/releases/tag/v0.1.0-alpha.1) ·
-[SHA-256](https://github.com/samarsky-gamedev/The-way-to-Chekushka-Alpha/releases/download/v0.1.0-alpha.1/SHA256SUMS.txt)
+[Страница загрузки](https://samarsky-gamedev.github.io/The-way-to-Chekushka-Alpha/) ·
+[Открыть страницу релиза](https://github.com/samarsky-gamedev/The-way-to-Chekushka-Alpha/releases/tag/v0.1.0-alpha.1)
 
 ## Что доступно
 
@@ -27,8 +27,8 @@
 ### Windows
 
 1. Скачайте Windows ZIP и полностью распакуйте его.
-2. Запустите `The way to Chekushka.exe` рядом с одноимённым `.pck`.
-3. При предупреждении SmartScreen проверьте имя файла и контрольную сумму,
+2. Запустите `The way to Chekushka.exe`.
+3. При предупреждении SmartScreen проверьте имя файла и источник загрузки,
    затем разрешите запуск, если доверяете этому релизу.
 
 ### macOS
