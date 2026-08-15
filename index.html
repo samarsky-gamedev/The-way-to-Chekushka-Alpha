@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Way to Chekushka — Alpha</title>
+<meta name="description" content="Скачать alpha-сборку The Way to Chekushka для Windows и macOS.">
+<meta property="og:title" content="The Way to Chekushka — Alpha">
+<meta property="og:description" content="Скачать alpha-сборку The Way to Chekushka для Windows и macOS.">
+<meta property="og:type" content="website">
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f6f7f8;
+    --border: #e0e2e5;
+    --text: #16181c;
+    --muted: #61656d;
+    --accent: #16181c;
+    --accent-text: #ffffff;
+    --link: #2f5fd0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101215;
+      --surface: #181b20;
+      --border: #2a2e35;
+      --text: #e9eaec;
+      --muted: #9aa0a9;
+      --accent: #e9eaec;
+      --accent-text: #101215;
+      --link: #7ea6ff;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    padding: 0 20px 72px;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  .page { max-width: 800px; margin: 0 auto; }
+
+  header { padding: 72px 0 40px; }
+
+  h1 {
+    margin: 0 0 10px;
+    font-size: 40px;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    font-weight: 650;
+  }
+
+  .release-line {
+    margin: 0;
+    color: var(--muted);
+    font-size: 15px;
+  }
+
+  .lead {
+    margin: 20px 0 0;
+    max-width: 62ch;
+    color: var(--muted);
+  }
+
+  h2 {
+    margin: 56px 0 20px;
+    font-size: 20px;
+    letter-spacing: -0.01em;
+    font-weight: 650;
+  }
+
+  h3 {
+    margin: 0 0 12px;
+    font-size: 15px;
+    font-weight: 650;
+  }
+
+  a { color: var(--link); }
+
+  .downloads {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 12px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--surface);
+  }
+
+  .card .platform { font-size: 15px; font-weight: 650; }
+
+  .card .requirements {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .button {
+    display: block;
+    margin-top: auto;
+    padding: 11px 16px;
+    border-radius: 8px;
+    background: var(--accent);
+    color: var(--accent-text);
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .button:hover { opacity: 0.85; }
+
+  .button .size {
+    font-weight: 400;
+    opacity: 0.7;
+  }
+
+  ul { margin: 0; padding-left: 22px; }
+
+  li { margin-bottom: 8px; }
+
+  .install {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+  }
+
+  .install ol { margin: 0; padding-left: 20px; }
+
+  .install li { margin-bottom: 10px; }
+
+  code {
+    padding: 1px 5px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--surface);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.88em;
+  }
+
+  .note {
+    margin: 16px 0 0;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  footer p { margin: 0 0 8px; }
+
+  footer .links a { margin-right: 18px; white-space: nowrap; }
+
+  @media (max-width: 520px) {
+    header { padding: 48px 0 32px; }
+    h1 { font-size: 32px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <h1>The Way to Chekushka</h1>
+    <p class="release-line">Alpha <span id="version">0.1.0</span> · <span id="published">10 августа 2026</span></p>
+    <p class="lead">
+      Кооперативный роглайт про спуск по этажам. Публичная alpha-сборка:
+      баланс, интерфейс и сетевое поведение ещё могут меняться.
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Скачать</h2>
+      <div class="downloads">
+        <div class="card">
+          <span class="platform">Windows</span>
+          <p class="requirements">Windows 10 или 11, x86-64</p>
+          <a class="button" id="download-windows"
+             href="https://github.com/samarsky-gamedev/The-way-to-Chekushka-Alpha/releases/download/v0.1.0-alpha.1/The-way-to-Chekushka-v0.1.0-alpha.1-Windows-x86_64.zip">
+            Скачать ZIP <span class="size" id="size-windows">· 106 МБ</span>
+          </a>
+        </div>
+        <div class="card">
+          <span class="platform">macOS</span>
+          <p class="requirements">macOS 11+ на Intel или macOS 13+ на Apple Silicon</p>
+          <a class="button" id="download-macos"
+             href="https://github.com/samarsky-gamedev/The-way-to-Chekushka-Alpha/releases/download/v0.1.0-alpha.1/The-way-to-Chekushka-v0.1.0-alpha.1-macOS-universal.zip">
+            Скачать ZIP <span class="size" id="size-macos">· 128 МБ</span>
+          </a>
+        </div>
+      </div>
+      <p class="note">Для запуска и входа требуется интернет-соединение.</p>
+    </section>
+
+    <section>
+      <h2>Что доступно</h2>
+      <ul>
+        <li>сюжетный этаж из шести связанных комнат с гермодверями, лутом и боссом;</li>
+        <li>бесконечный режим с процедурными этажами, сундуками и повышением сложности;</li>
+        <li>сетевой кооператив для 1–3 игроков через выделенный сервер.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Установка</h2>
+      <div class="install">
+        <div>
+          <h3>Windows</h3>
+          <ol>
+            <li>Скачайте Windows ZIP и полностью распакуйте его.</li>
+            <li>Запустите <code>The way to Chekushka.exe</code>.</li>
+            <li>При предупреждении SmartScreen проверьте имя файла и источник загрузки, затем разрешите запуск, если доверяете этому релизу.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>macOS</h3>
+          <ol>
+            <li>Скачайте и распакуйте macOS ZIP.</li>
+            <li>Переместите <code>The way to Chekushka.app</code> в <code>Applications</code> при желании.</li>
+            <li>Сборка подписана встроенной ad-hoc подписью Godot, но не нотарифицирована Apple. При блокировке откройте <strong>System Settings → Privacy &amp; Security</strong> и используйте <strong>Open Anyway</strong> для этого приложения.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="links">
+      <a id="link-release" href="https://github.com/samarsky-gamedev/The-way-to-Chekushka-Alpha/releases/tag/v0.1.0-alpha.1">Страница релиза</a>
+      <a id="link-checksums" href="#" hidden>SHA-256</a>
+      <a href="https://github.com/samarsky-gamedev/The-way-to-Chekushka-Alpha/issues">Сообщить об ошибке</a>
+    </p>
+    <p>
+      Сборки созданы из
+      <a href="https://github.com/samarsky-gamedev/The-way-to-Chekushka/commit/42bb4fd74c2756b130334486ab54ac513091f5d9">The-way-to-Chekushka@42bb4fd</a>.
+    </p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  var REPO = 'samarsky-gamedev/The-way-to-Chekushka-Alpha';
+
+  // Релиз помечен pre-release, поэтому /releases/latest его не возвращает —
+  // берём полный список и первый (самый свежий) элемент.
+  var API = 'https://api.github.com/repos/' + REPO + '/releases?per_page=1';
+
+  function megabytes(bytes) {
+    return '· ' + Math.round(bytes / 1048576) + ' МБ';
+  }
+
+  function humanDate(iso) {
+    var months = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня',
+                  'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
+    var d = new Date(iso);
+    if (isNaN(d)) return null;
+    return d.getUTCDate() + ' ' + months[d.getUTCMonth()] + ' ' + d.getUTCFullYear();
+  }
+
+  function findAsset(assets, needle) {
+    for (var i = 0; i < assets.length; i++) {
+      if (assets[i].name.indexOf(needle) !== -1) return assets[i];
+    }
+    return null;
+  }
+
+  function applyAsset(asset, linkId, sizeId) {
+    if (!asset) return;
+    document.getElementById(linkId).href = asset.browser_download_url;
+    document.getElementById(sizeId).textContent = megabytes(asset.size);
+  }
+
+  function setText(id, value) {
+    if (value) document.getElementById(id).textContent = value;
+  }
+
+  // Разметка уже содержит рабочие ссылки на текущий релиз. Всё ниже —
+  // только обновление до самого свежего; любая ошибка оставляет их как есть.
+  fetch(API, { headers: { 'Accept': 'application/vnd.github+json' } })
+    .then(function (response) {
+      if (!response.ok) throw new Error('HTTP ' + response.status);
+      return response.json();
+    })
+    .then(function (releases) {
+      var release = releases && releases[0];
+      if (!release || !release.assets) return;
+
+      applyAsset(findAsset(release.assets, 'Windows'), 'download-windows', 'size-windows');
+      applyAsset(findAsset(release.assets, 'macOS'), 'download-macos', 'size-macos');
+
+      setText('version', String(release.tag_name).replace(/^v/, '').replace(/-alpha.*$/, ''));
+      setText('published', humanDate(release.published_at));
+
+      if (release.html_url) {
+        document.getElementById('link-release').href = release.html_url;
+      }
+
+      // В текущем релизе файла контрольных сумм нет, поэтому ссылка скрыта
+      // в разметке и появляется только когда ассет действительно есть.
+      var checksums = findAsset(release.assets, 'SHA256SUMS');
+      if (checksums) {
+        var link = document.getElementById('link-checksums');
+        link.href = checksums.browser_download_url;
+        link.hidden = false;
+      }
+    })
+    .catch(function () {
+      /* Офлайн или лимит API — остаются зашитые ссылки. */
+    });
+})();
+</script>
+</body>
+</html>
