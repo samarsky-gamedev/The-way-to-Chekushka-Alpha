@@ -3,15 +3,13 @@
 Это публичный репозиторий готовых alpha-сборок. Исходный код игры и история
 разработки находятся в основном репозитории проекта.
 
-## Скачать Alpha 0.1.0
+## Скачать Alpha
 
-| Платформа | Требования | Загрузка |
-|---|---|---|
-| Windows | Windows 10/11, x86-64 | [Скачать ZIP](https://github.com/samarsky-gamedev/The-way-to-Chekushka-Alpha/releases/download/v0.1.0-alpha.1/The-way-to-Chekushka-v0.1.0-alpha.1-Windows-x86_64.zip) |
-| macOS | macOS 11+ на Intel или macOS 13+ на Apple Silicon | [Скачать ZIP](https://github.com/samarsky-gamedev/The-way-to-Chekushka-Alpha/releases/download/v0.1.0-alpha.1/The-way-to-Chekushka-v0.1.0-alpha.1-macOS-universal.zip) |
+[Страница загрузки](https://samarsky-gamedev.github.io/The-way-to-Chekushka-Alpha/) —
+всегда ведёт на актуальную сборку для Windows и macOS.
 
-[Страница загрузки](https://samarsky-gamedev.github.io/The-way-to-Chekushka-Alpha/) ·
-[Открыть страницу релиза](https://github.com/samarsky-gamedev/The-way-to-Chekushka-Alpha/releases/tag/v0.1.0-alpha.1)
+Прямой список сборок: [Releases](https://github.com/samarsky-gamedev/The-way-to-Chekushka-Alpha/releases)
+(самый свежий релиз — первый в списке).
 
 ## Что доступно
 
@@ -38,9 +36,6 @@
 3. Сборка подписана встроенной ad-hoc подписью Godot, но не нотарифицирована
    Apple. При блокировке откройте **System Settings → Privacy & Security** и
    используйте **Open Anyway** для этого приложения.
-
-Сборки созданы из
-[`The-way-to-Chekushka@42bb4fd`](https://github.com/samarsky-gamedev/The-way-to-Chekushka/commit/42bb4fd74c2756b130334486ab54ac513091f5d9).
 
 Ошибки и обратную связь можно оставлять в
 [Issues](https://github.com/samarsky-gamedev/The-way-to-Chekushka-Alpha/issues).
